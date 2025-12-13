@@ -14,3 +14,12 @@ jobs:
           # 480초(8분) ~ 840초(14분) 사이 랜덤 대기
           sleep $((480 + RANDOM % 360))
           curl -s https://ddddd-d61p.onrender.com/ > /dev/null
+
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send request to Render server
+        run: |
+          # 480초(8분) ~ 840초(14분) 사이 랜덤 대기
+          sleep $((480 + RANDOM % 360))
+          curl -s https://anniversary-nf8k.onrender.com/ > /dev/null
